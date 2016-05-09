@@ -17,9 +17,9 @@ sub import {
             (map { "  '$_' => $INC{$_}\n" } sort keys %INC),
             "}\n";
         if (@handler_stack) {
-            $handler_stack[-1]->();
+            goto &{$handler_stack[-1]};
         } else {
-            die;
+            die @_;
         }
     };
 }
