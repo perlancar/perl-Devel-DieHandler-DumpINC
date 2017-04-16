@@ -46,3 +46,10 @@ of C<%INC> to STDERR, then calls the previous handler (or die).
 
 Unimporting (via C<no Devel::DieHandler::DumpINC>) after importing restores the
 previous handler.
+
+
+=head1 SEE ALSO
+
+L<Devel::DieHandler::PrintINCVersion>
+
+Other C<Devel::DieHandler::*> modules
